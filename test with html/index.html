@@ -19,14 +19,16 @@
     <div id="map"></div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHGR2Ks748hSxHWL0V6AjbjXQAR8dwKho&callback=initMap&libraries=&v=weekly" async></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHGR2Ks748hSxHWL0V6AjbjXQAR8dwKho&callback=initMap&libraries=&v=weekly"
+        async></script>
 </body>
 <script>
     function initMap() {
         // The location of Uluru
         const uluru = {
-            lat: 12.7815286,
-            lng: 101.2815344
+            lat: 16.4779832,
+            lng: 102.8194191
         };
         // The map, centered at Uluru
         const map = new google.maps.Map(document.getElementById("map"), {
