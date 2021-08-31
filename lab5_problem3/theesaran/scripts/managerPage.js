@@ -16,7 +16,7 @@ catch (err) {
 }
 
 
-fetch("./data.json")
+fetch("./json/data.json")
     .then((response) => {
         return response.json();
     })
@@ -43,7 +43,7 @@ function deleteElement(id) {
 }
 
 function changeData(id) {
-    fetch("./data.json")
+    fetch("./json/data.json")
         .then((response) => {
             return response.json();
         })
